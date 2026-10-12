@@ -1,0 +1,78 @@
+nav{
+    background: transparent;
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+body.dark > nav > .logo > h2{
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--text-dark);
+}
+
+body.light > nav > .logo > h2{
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--text-light);
+}
+
+nav > ul{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+body.dark nav > ul > li > a{
+    color: var(--text-dark);
+    font-size: 20px;
+    font-weight: 400;
+    transition: all 0.6s ease-in;
+}
+
+body.light nav > ul > li > a{
+    color: var(--text-light);
+    font-size: 20px;
+    font-weight: 400;
+    transition: all 0.6s ease-in;
+}
+
+body.dark nav > ul > li > a:hover{
+    color: var(--text-gray);
+    transform: scale(1.1);
+}
+
+body.light nav > ul > li > a:hover{
+    color: var(--text-gray);
+    transform: scale(1.1);
+}
+
+body.dark > nav > .theme-toggle{
+    padding: 8px;
+    border-radius: 50%;
+    background-color: var(--bg-light);
+}
+
+body.dark > nav > .theme-toggle > i{
+    color: var(--text-light);
+    font-size: 1rem;
+}
+
+body.light > nav > .theme-toggle{
+    padding: 8px;
+    border-radius: 50%;
+    background-color: var(--bg-dark);
+}
+
+body.light > nav > .theme-toggle > i{
+    color: var(--text-dark);
+    font-size: 1rem;
+}
+

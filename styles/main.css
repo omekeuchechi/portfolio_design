@@ -1,0 +1,112 @@
+main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    max-width: 2000px;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+main > .content{
+    width: 100%;
+    max-width: 700px;
+}
+
+main > .content > h1{
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+}
+
+body.dark > main > .content > h1{
+    color:  var(--text-dark);
+}
+
+body.light > main > .content > h1{
+    color:  var(--text-light);
+}
+
+main > .content > p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+body.dark > main > .content > p{
+    color:  var(--text-gray);
+}
+
+body.light > main > .content > p{
+    color:  var(--text-gray);
+}
+
+main > .content > .down-side{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+body.dark > main > .content > .down-side > a{
+    border: 1.5px solid var(--text-dark);
+    color: var(--text-dark);
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+body.light > main > .content > .down-side > a{
+    border: 1.5px solid var(--text-light);
+    color: var(--text-light);
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+main > .content > .down-side > .social-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+body.dark > main > .content > .down-side > .social-icons > a{
+    color: var(--text-dark);
+    text-decoration: none;
+    transition: all 0.6s ease-in-out;
+}
+
+body.light > main > .content > .down-side > .social-icons > a{
+    color: var(--text-light);
+    text-decoration: none;
+    transition: all 0.6s ease-in-out;
+}
+
+body.dark > main > .content > .down-side > .social-icons > a:hover{
+    color: var(--text-gray);
+    transform: scale(1.1);
+}
+
+body.light > main > .content > .down-side > .social-icons > a:hover{
+    color: var(--text-gray);
+    transform: scale(1.1);
+}
+
+main > .image-side{
+    width: 100%;
+    max-width: 590px;
+    z-index: -900;    
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+main > .image-side > img{
+    width: 100%;
+    max-width: 590px;
+    height: 600px;
+    filter: grayscale(100%);
+}
